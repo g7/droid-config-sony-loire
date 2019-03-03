@@ -4,7 +4,7 @@
 Description: Pattern with packages for f5121 configurations
 Name: jolla-configuration-f5121
 Requires:
-- pattern:jolla-hw-adaptation-f512x
+- pattern:jolla-hw-adaptation-suzu
 
 - patterns-sailfish-applications
 - patterns-sailfish-ui
