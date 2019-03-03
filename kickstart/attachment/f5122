@@ -1,1 +1,6 @@
-f5121
+/boot/hybris-boot.img
+/boot/hybris-recovery.img
+droid-config-f5122-out-of-image-files
+droid-flashing-tools
+/etc/hw-release
+oem-flasher-f512x
