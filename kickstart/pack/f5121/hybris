@@ -76,20 +76,20 @@ dd if=/dev/zero bs=512 count=0 of=temp.img seek=$TEMPIMGSECTORS
 LVM_LOOP=$(/sbin/losetup -f)
 /sbin/losetup $LVM_LOOP temp.img
 /usr/sbin/pvcreate $LVM_LOOP
-/usr/sbin/vgcreate sailfish $LVM_LOOP
+/usr/sbin/vgcreate sailfish81 $LVM_LOOP
 
 echo "Create logical volume ROOT size: $ROOTSIZE"
-/usr/sbin/lvcreate -L ${ROOTSIZE}B --name root sailfish
+/usr/sbin/lvcreate -L ${ROOTSIZE}B --name root sailfish81
 
 echo "Create logical volume HOME size: $HOMESIZE"
-/usr/sbin/lvcreate -L ${HOMESIZE}B --name home sailfish
+/usr/sbin/lvcreate -L ${HOMESIZE}B --name home sailfish81
 
 /bin/sync
 /usr/sbin/vgchange -a y sailfish
 
-dd if=root.img bs=$BLOCKSIZE count=$ROOTBLOCKS of=/dev/sailfish/root
+dd if=root.img bs=$BLOCKSIZE count=$ROOTBLOCKS of=/dev/sailfish81/root
 
-dd if=home.img bs=$BLOCKSIZE count=$HOMEBLOCKS of=/dev/sailfish/home
+dd if=home.img bs=$BLOCKSIZE count=$HOMEBLOCKS of=/dev/sailfish81/home
 
 /usr/sbin/vgchange -a n sailfish
 
