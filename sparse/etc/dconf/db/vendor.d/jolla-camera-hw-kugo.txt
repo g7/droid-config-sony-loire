@@ -1,0 +1,21 @@
+# Thanks to https://gitlab.com/Manizuca/droid-config-f5321/
+
+[apps/jolla-camera/primary/image]
+viewfinderResolution='640x480'
+viewfinderResolution_4_3='640x480'
+viewfinderResolution_16_9='1280x720'
+
+[apps/jolla-camera/secondary/image]
+imageResolution='2592x1944'
+imageResolution_4_3='2592x1944'
+imageResolution_16_9='1920x1080'
+viewfinderResolution='640x480'
+viewfinderResolution_4_3='640x480'
+viewfinderResolution_16_9='1280x720'
+
+[apps/jolla-camera/primary/video]
+viewfinderResolution='1280x720'
+
+[apps/jolla-camera/secondary/video]
+imageResolution='2592x1944'
+viewfinderResolution='1280x720'

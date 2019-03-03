@@ -1,0 +1,6 @@
+# Thanks to https://gitlab.com/Manizuca/droid-config-f5321/
+
+[desktop/sailfish/silica]
+theme_pixel_ratio=1.25
+theme_icon_subdir='z1.25'
+icon_size_launcher=108
